@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<project xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd" xmlns="http://maven.apache.org/POM/4.0.0"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <modelVersion>4.0.0</modelVersion>
+  <parent>
+    <groupId>com.maven.template.multimodular</groupId>
+    <artifactId>maven-template-multimodular</artifactId>
+    <version>1.0-SNAPSHOT</version>
+  </parent>
+  <groupId>com.maven.template.multimodular.webapp</groupId>
+  <artifactId>maven-template-multimodular-webapp</artifactId>
+  <version>1.0-SNAPSHOT</version>
+  <packaging>war</packaging>
+  <name>maven-template-multimodular-webapp Maven Webapp</name>
+  <url>http://maven.apache.org</url>
+  <dependencies>
+    <dependency>
+      <!--since into the parent pom you specified the global dependency, here we don't need the version-->
+      <groupId>mysql</groupId>
+      <artifactId>mysql-connector-java</artifactId>
+    </dependency>
+    <dependency>
+      <groupId>junit</groupId>
+      <artifactId>junit</artifactId>
+      <version>3.8.1</version>
+      <scope>test</scope>
+    </dependency>
+  </dependencies>
+  <build>
+    <finalName>maven-template-multimodular-webapp</finalName>
+  </build>
+</project>
